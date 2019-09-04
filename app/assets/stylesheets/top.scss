@@ -1,0 +1,34 @@
+.main-content {
+  height: 80%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("/fox_top.jpg");
+}
+
+.top-message {
+  position: relative;
+  top: 130px;
+}
+
+.main-content h2 {
+  font-size: 4.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.main-content p {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+footer {
+  height: 70px;
+  color: #fff;
+  background-color: #2C3E50;
+  padding: 15px 0 5px;
+}
+
+footer p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
