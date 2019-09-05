@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="posts-show-item">
+    <p><%= @post.content %></p>
+    <div class="post-time">
+      <%= @post.created_at %>
+    </div><!-- /.post-time -->
+  </div><!-- /.posts-show-item -->
+
+  <div class="post-menus">
+    <%= link_to '編集', edit_post_path(@post.id) %>
+    <%= link_to '削除'  %>
+  </div><!-- /.post-menus -->
+</div><!-- /.container -->

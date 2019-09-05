@@ -10,7 +10,7 @@ html {
 
 body {
   height: 100%;
-  text-align: center;
+  /* text-align: center; */
   font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
 }
 
@@ -41,9 +41,12 @@ li {
   clear: both;
 }
 
-a {
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
-  color: #fff;
+  color: #d03c56;
   cursor: pointer;
 }
 
