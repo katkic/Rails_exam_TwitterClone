@@ -2,6 +2,18 @@
   <h1>新規作成</h1>
 
   <%= form_with(model: @post, local: true) do |form| %>
+    <% if @post.errors.any? %>
+      <div class="error_explanation">
+        <h2><%= @post.errors.count %>件のエラーがあります</h2>
+        <ul>
+          <%= @post.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+        <br>
+      </div><!-- /.error_explanation -->
+    <% end %>
+
     <div class="form">
       <div class="form-body">
         <div class="post_content">
