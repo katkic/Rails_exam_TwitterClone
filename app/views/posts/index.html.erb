@@ -5,7 +5,7 @@
   <% @posts.each do |post| %>
     <div class="posts-index-item">
       <p class="item"><%= post.content %></p>
-      <p class="created_at"><%= post.created_at %></p>
+      <p class="created_at"><%= post.created_at.to_s :published_on %></p>
 
       <div class="post-menus">
         <%= link_to '編集', edit_post_path(post.id) %>
