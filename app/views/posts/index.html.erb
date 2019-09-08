@@ -1,10 +1,16 @@
-<h1>投稿一覧</h1>
 <div class="container">
-  <h2><%= notice %></h2>
+  <h2 class="flash"><%= notice %></h2>
+
+  <h1>投稿一覧</h1>
   <% @posts.each do |post| %>
     <div class="posts-index-item">
-      <p><%= link_to post.content, post_path(post.id) %></p>
-      <p><%= post.created_at %></p>
+      <p class="item"><%= post.content %></p>
+      <p class="created_at"><%= post.created_at %></p>
+
+      <div class="post-menus">
+        <%= link_to '編集', edit_post_path(post.id) %>
+        <%= link_to '削除', post_path(post.id), method: :delete, data: { confirm: '削除してもよろしいですか?' } %>
+      </div><!-- /.post-menus -->
     </div><!-- /.posts-index-item -->
   <% end %>
 </div><!-- /.container -->
