@@ -10,7 +10,6 @@ html {
 
 body {
   height: 100%;
-  /* text-align: center; */
   font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
 }
 
@@ -41,18 +40,20 @@ li {
   clear: both;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
+a {
   text-decoration: none;
-  color: #d03c56;
+  color: black;
   cursor: pointer;
 }
 
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+/* ヘッダー ================================ */
 header {
   width: 100%;
-  color: #fff;
   height: 70px;
   line-height: 70px;
   background-color: #2C3E50;
@@ -62,6 +63,10 @@ header {
 .header-logo {
   font-size: 2.5rem;
   float: left;
+}
+
+.header-logo a {
+  color: white;
 }
 
 .header-menus {
@@ -74,4 +79,8 @@ header {
   font-size: 1.5rem;
   float: left;
   padding: 0 25px;
+}
+
+.header-menus a {
+  color: white;
 }
