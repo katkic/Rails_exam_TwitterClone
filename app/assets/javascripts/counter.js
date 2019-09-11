@@ -1,13 +1,13 @@
 window.addEventListener('DOMContentLoaded', function() {
-  const content = document.getElementById('post_content');
+  const content = document.querySelector('#post_content');
+  const countText = document.querySelector('#show-count-text')
 
-  content.addEventListener('keyup', function() {
-    let count = this.value.length;
-    document.querySelector('#show-count-text').innerText = count;
-  }, false);
+  if (countText != null) {
+    countText.innerText = content.value.replace(/\n/g, '\r\n').length;
 
-  content.addEventListener('blur', function() {
-    let count = this.value.length;
-    document.querySelector('#show-count-text').innerText = count;
-  }, false);
+    content.addEventListener('input', function() {
+      let count = this.value.replace(/\n/g, '\r\n').length;
+      countText.innerText = count;
+    }, false);
+  }
 }, false);
