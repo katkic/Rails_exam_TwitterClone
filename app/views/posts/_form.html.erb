@@ -14,7 +14,7 @@
   <div class="form">
     <div class="form-body clearfix">
       <div class="post-content">
-        <%= form.label :content %><br>
+        <%= form.label :content %>
         <%= form.text_area :content %>
         <div class="counter-content">
           <span id="show-count-text">
@@ -23,12 +23,10 @@
           /140
         </div><!-- /.counter-content -->
       </div><!-- /.post-content -->
-
       <%= form.submit %>
     </div><!-- /.form-body -->
   </div><!-- /.form -->
 <% end %>
-
 <div class="back">
   <%= link_to '一覧へ戻る', posts_path %>
 </div><!-- /.back -->

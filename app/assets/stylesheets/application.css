@@ -11,6 +11,7 @@ html {
 body {
   height: 100%;
   font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  line-height: 1.5;
 }
 
 * {
@@ -32,6 +33,12 @@ li {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
 }
 
 .clearfix::after {

@@ -3,14 +3,14 @@
   <%= form_with(model: @post, url: posts_path, local: true) do |form| %>
     <%= form.hidden_field :content %>
     <div class="form">
-      <div class="form-body clearfix">
+      <div class="form-body">
         <div class="post-content">
           <pre><%= @post.content %></pre>
         </div><!-- /.post-content -->
 
-        <div class="confirm-button">
-          <%= form.submit '登録する' %>
+        <div class="confirm-button clearfix">
           <%= form.submit '戻る', name: 'back' %>
+          <%= form.submit '登録する' %>
         </div><!-- /.confirm-button -->
       </div><!-- /.form-body -->
     </div><!-- /.form -->
